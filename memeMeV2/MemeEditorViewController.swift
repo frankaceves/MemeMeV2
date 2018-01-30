@@ -125,13 +125,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
     }
-    // MARK: MEME Object Struct Properties
-    struct Meme {
-        var topText: String
-        var bottomText: String
-        var originalImage: UIImage
-        var memedImage: UIImage
-    }
     
     // MARK: SAVE IMAGE FUNCTIONS
     func toggleToolAndNavBar(_ status: Bool) {
@@ -157,6 +150,11 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     func save(_ memedImage : UIImage) {
         //Create the Meme Object
         let meme = Meme(topText: topText.text!, bottomText: bottomText.text!, originalImage: imagePickerView.image!, memedImage: memedImage)
+        
+        // Add it to the memes array in the Application Delegate
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(meme)
     }
     
     @IBAction func shareMeme(_ sender: UIBarButtonItem) {
