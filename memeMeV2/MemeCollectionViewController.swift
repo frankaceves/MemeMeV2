@@ -25,10 +25,11 @@ class MemeCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionView", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath) as! MemeCollectionViewCell
         let memeToShow = self.memes[indexPath.row]
         
-        let placeHolderCell = UICollectionViewCell()
-        return placeHolderCell
+        cell.memeImageView.image = memeToShow.memedImage
+        
+        return cell
     }
 }
