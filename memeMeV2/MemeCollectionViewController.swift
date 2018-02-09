@@ -18,4 +18,17 @@ class MemeCollectionViewController: UICollectionViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
     }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return memes.count
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionView", for: indexPath)
+        let memeToShow = self.memes[indexPath.row]
+        
+        let placeHolderCell = UICollectionViewCell()
+        return placeHolderCell
+    }
 }
