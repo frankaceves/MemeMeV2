@@ -155,6 +155,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
         appDelegate.memes.append(meme)
+        print(appDelegate.memes.count)
     }
     
     @IBAction func shareMeme(_ sender: UIBarButtonItem) {
@@ -166,6 +167,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         shareController.completionWithItemsHandler = { (_,successful,_,_) in
             if successful {
             self.save(image)
+            self.dismiss(animated: true, completion: nil)
             }
         }
         
