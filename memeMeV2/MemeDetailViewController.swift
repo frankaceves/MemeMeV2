@@ -22,9 +22,8 @@ class MemeDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // pass meme data from table/collection View Controller.
-        let placeholderImage = UIImage()
-        
-        self.memeImageView.image = placeholderImage
+        self.memeImageView.image = meme.memedImage
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewDidLoad() {
