@@ -21,7 +21,10 @@ class MemeDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // pass meme data from table/collection View Controller.
+        let placeholderImage = UIImage()
         
+        self.memeImageView.image = placeholderImage
     }
     
     override func viewDidLoad() {
