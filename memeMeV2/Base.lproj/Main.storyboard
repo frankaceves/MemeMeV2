@@ -147,7 +147,7 @@
         <!--Meme Table View Controller-->
         <scene sceneID="jAG-ID-iZ6">
             <objects>
-                <tableViewController title="Meme Table View Controller" id="qST-Zk-s6P" customClass="MemeTableViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Meme Table View Controller" id="qST-Zk-s6P" customClass="SentMemesTableViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jhz-cK-MUn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,7 +210,7 @@
         <!--Meme Collection View Controller-->
         <scene sceneID="qqT-ST-LEz">
             <objects>
-                <collectionViewController title="Meme Collection View Controller" id="KZh-Ou-Jln" customClass="MemeCollectionViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Meme Collection View Controller" id="KZh-Ou-Jln" customClass="SentMemesCollectionViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="3Vx-LZ-1c1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

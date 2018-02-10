@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MemeTableViewController: UITableViewController {
+class SentMemesTableViewController: UITableViewController {
     var memes: [Meme]!
     
     override func viewDidLoad() {

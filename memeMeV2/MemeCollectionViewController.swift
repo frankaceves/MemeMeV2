@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MemeCollectionViewController: UICollectionViewController {
+class SentMemesCollectionViewController: UICollectionViewController {
     var memes: [Meme]!
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class MemeCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath) as! MemeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionView", for: indexPath) as! MemeCollectionViewCell
         let memeToShow = self.memes[indexPath.row]
         
         cell.memeImageView.image = memeToShow.memedImage
