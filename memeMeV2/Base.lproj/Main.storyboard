@@ -121,23 +121,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJD-VC-79c">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2C-cf-HtM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Meme Detail" id="4xm-pG-18v"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Z2C-cf-HtM" firstAttribute="trailing" secondItem="HN6-gF-MCe" secondAttribute="trailing" id="QFY-2M-hIv"/>
-                            <constraint firstItem="Z2C-cf-HtM" firstAttribute="top" secondItem="TVS-3J-pou" secondAttribute="top" id="TNs-Kk-G6V"/>
+                            <constraint firstItem="fJD-VC-79c" firstAttribute="top" secondItem="HN6-gF-MCe" secondAttribute="top" id="D9n-ba-0Df"/>
                             <constraint firstItem="fJD-VC-79c" firstAttribute="leading" secondItem="HN6-gF-MCe" secondAttribute="leading" id="ZyL-9P-ixp"/>
                             <constraint firstItem="fJD-VC-79c" firstAttribute="bottom" secondItem="HN6-gF-MCe" secondAttribute="bottom" id="bXh-Xu-xlG"/>
-                            <constraint firstItem="Z2C-cf-HtM" firstAttribute="leading" secondItem="HN6-gF-MCe" secondAttribute="leading" id="bn7-AF-3zu"/>
-                            <constraint firstItem="fJD-VC-79c" firstAttribute="top" secondItem="Z2C-cf-HtM" secondAttribute="bottom" id="lEd-X8-uvc"/>
                             <constraint firstItem="fJD-VC-79c" firstAttribute="trailing" secondItem="HN6-gF-MCe" secondAttribute="trailing" id="oJG-BM-0Fx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HN6-gF-MCe"/>
