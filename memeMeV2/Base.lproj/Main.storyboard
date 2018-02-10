@@ -113,7 +113,7 @@
         <!--Meme Detail View Controller-->
         <scene sceneID="9ej-J1-E3H">
             <objects>
-                <viewController id="AbA-Mw-QSo" userLabel="Meme Detail View Controller" customClass="MemeDetailViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeDetailViewController" id="AbA-Mw-QSo" userLabel="Meme Detail View Controller" customClass="MemeDetailViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TVS-3J-pou">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +126,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="HN6-gF-MCe"/>
                     </view>
+                    <connections>
+                        <outlet property="memeImageView" destination="fJD-VC-79c" id="QvV-WM-37p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqt-hA-Uu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
