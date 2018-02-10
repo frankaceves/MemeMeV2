@@ -65,12 +65,12 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         bottomText.textAlignment = .center
     }
     
-    //clearMeme called when Cancel button is pressed.
-    @IBAction func clearMeme(_ sender: Any) {
-        imagePickerView.image = nil
-        configureText()
-        shareButton.isEnabled = false
-        
+    //Cancel button sends user back to Collection or Table View.
+    @IBAction func cancelMeme(_ sender: Any) {
+        //imagePickerView.image = nil
+        //configureText()
+        //shareButton.isEnabled = false
+        self.dismiss(animated: true, completion: nil)
     }
 
 
