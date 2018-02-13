@@ -14,10 +14,6 @@ class SentMemesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +26,7 @@ class SentMemesTableViewController: UITableViewController {
     }
     
     
-    
+    // MARK: - POPULATE TABLE WITH MEME DATA
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes.count
     }
