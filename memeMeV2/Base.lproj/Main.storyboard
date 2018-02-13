@@ -116,22 +116,21 @@
         <scene sceneID="9ej-J1-E3H">
             <objects>
                 <viewController storyboardIdentifier="MemeDetailViewController" id="AbA-Mw-QSo" userLabel="Meme Detail View Controller" customClass="MemeDetailViewController" customModule="MemeMe_v2_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TVS-3J-pou">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TVS-3J-pou">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJD-VC-79c">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJD-VC-79c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fJD-VC-79c" firstAttribute="top" secondItem="HN6-gF-MCe" secondAttribute="top" id="D9n-ba-0Df"/>
-                            <constraint firstItem="fJD-VC-79c" firstAttribute="leading" secondItem="HN6-gF-MCe" secondAttribute="leading" id="ZyL-9P-ixp"/>
-                            <constraint firstItem="fJD-VC-79c" firstAttribute="bottom" secondItem="HN6-gF-MCe" secondAttribute="bottom" id="bXh-Xu-xlG"/>
-                            <constraint firstItem="fJD-VC-79c" firstAttribute="trailing" secondItem="HN6-gF-MCe" secondAttribute="trailing" id="oJG-BM-0Fx"/>
+                            <constraint firstItem="fJD-VC-79c" firstAttribute="top" secondItem="TVS-3J-pou" secondAttribute="top" id="D9n-ba-0Df"/>
+                            <constraint firstItem="fJD-VC-79c" firstAttribute="leading" secondItem="TVS-3J-pou" secondAttribute="leading" id="ZyL-9P-ixp"/>
+                            <constraint firstItem="fJD-VC-79c" firstAttribute="bottom" secondItem="TVS-3J-pou" secondAttribute="bottom" id="bXh-Xu-xlG"/>
+                            <constraint firstItem="fJD-VC-79c" firstAttribute="trailing" secondItem="TVS-3J-pou" secondAttribute="trailing" id="oJG-BM-0Fx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HN6-gF-MCe"/>
                     </view>
                     <connections>
                         <outlet property="memeImageView" destination="fJD-VC-79c" id="QvV-WM-37p"/>
