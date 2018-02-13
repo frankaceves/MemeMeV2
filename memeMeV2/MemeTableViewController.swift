@@ -37,7 +37,8 @@ class SentMemesTableViewController: UITableViewController {
         let tableMeme = self.memes[indexPath.row]
 
         cell.imageView?.image = tableMeme.memedImage
-        cell.textLabel?.text = tableMeme.topText
+        //cell.textLabel?.text = tableMeme.topText
+        cell.textLabel?.text = "\(tableMeme.topText)...\(tableMeme.bottomText)"
         
         return cell
     }
