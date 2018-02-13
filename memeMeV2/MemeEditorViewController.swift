@@ -37,7 +37,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         shareButton.isEnabled = false
-        configureText()
+        configureText(topText)
+        configureText(bottomText)
     }
     
     
@@ -53,16 +54,16 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     // MARK: TEXT FIELD ACTIONS
-    func configureText() {
-        // TODO: code to configure textfield.
-        self.topText.delegate = memeTextDelegate
-        self.bottomText.delegate = memeTextDelegate
-        topText.defaultTextAttributes = memeTextDelegate.memeTextAttributes
-        bottomText.defaultTextAttributes = memeTextDelegate.memeTextAttributes
-        topText.text = "TOP"
-        topText.textAlignment = .center
-        bottomText.text = "BOTTOM"
-        bottomText.textAlignment = .center
+    func configureText(_ textField: UITextField) {
+        textField.delegate = memeTextDelegate
+        textField.defaultTextAttributes = memeTextDelegate.memeTextAttributes
+        textField.textAlignment = .center
+        
+        if textField == topText {
+            textField.text = "TOP"
+        } else {
+            textField.text = "BOTTOM"
+        }
     }
     
     //Cancel button sends user back to Collection or Table View.
