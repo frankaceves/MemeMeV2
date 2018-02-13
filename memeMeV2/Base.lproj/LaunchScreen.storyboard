@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-c7-Gen">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Meme Me Launch" translatesAutoresizingMaskIntoConstraints="NO" id="1ke-c7-Gen">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1ke-c7-Gen" secondAttribute="height" multiplier="375:667" id="pd8-lr-jPw"/>
@@ -42,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="512" height="682"/>
+        <image name="Meme Me Launch" width="512" height="682"/>
     </resources>
 </document>
