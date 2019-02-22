@@ -68,9 +68,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     //Cancel button sends user back to Collection or Table View.
     @IBAction func cancelMeme(_ sender: Any) {
-        //imagePickerView.image = nil
-        //configureText()
-        //shareButton.isEnabled = false
         self.dismiss(animated: true, completion: nil)
     }
 
