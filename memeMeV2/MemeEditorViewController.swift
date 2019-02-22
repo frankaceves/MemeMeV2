@@ -174,7 +174,4 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         
         self.present(shareController, animated: true, completion: nil)
     }
-
-/// CLOSE OF CLASS
 }
-
