@@ -162,16 +162,17 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func shareMeme(_ sender: UIBarButtonItem) {
         let image = generateMemedImage()
         let shareController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-        self.present(shareController, animated: true, completion: nil)
+        
         
         //completion code suggestion taken from udacity forum mentor
         shareController.completionWithItemsHandler = { (_,successful,_,_) in
             if successful {
-            self.save(image)
-            self.dismiss(animated: true, completion: nil)
+                self.save(image)
+                self.dismiss(animated: true, completion: nil)
             }
         }
         
+        self.present(shareController, animated: true, completion: nil)
     }
 
 /// CLOSE OF CLASS
