@@ -11,10 +11,10 @@ import UIKit
 
 class MemeTextDelegate: NSObject, UITextFieldDelegate {
     let memeTextAttributes: [String:Any] = [
-        NSAttributedStringKey.strokeColor.rawValue : UIColor.black,
-        NSAttributedStringKey.foregroundColor.rawValue : UIColor.white,
-        NSAttributedStringKey.font.rawValue : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
-        NSAttributedStringKey.strokeWidth.rawValue : -3.0
+        NSAttributedString.Key.strokeColor.rawValue : UIColor.black,
+        NSAttributedString.Key.foregroundColor.rawValue : UIColor.white,
+        NSAttributedString.Key.font.rawValue : UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
+        NSAttributedString.Key.strokeWidth.rawValue : -3.0
     ]
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
