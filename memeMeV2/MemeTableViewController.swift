@@ -17,7 +17,6 @@ class SentMemesTableViewController: UITableViewController {
     
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
-        
         tableView.reloadData()
     }
     
