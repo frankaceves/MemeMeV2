@@ -30,7 +30,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="BOTTOM" textAlignment="center" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-Kc-c3d" userLabel="BOTTOM Text">
-                                <rect key="frame" x="25" y="696" width="364" height="21"/>
+                                <rect key="frame" x="25" y="772" width="364" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -54,7 +54,7 @@
                                 </items>
                             </navigationBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS0-di-kIi">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="H96-2a-uxa"/>
                                     <barButtonItem systemItem="camera" id="zHl-Da-Kfr" userLabel="Camera Button">
@@ -80,7 +80,7 @@
                             <constraint firstItem="lS0-di-kIi" firstAttribute="bottom" secondItem="es9-B6-b2i" secondAttribute="bottom" id="Kl9-n3-QDX"/>
                             <constraint firstItem="hGx-gJ-L4e" firstAttribute="trailing" secondItem="es9-B6-b2i" secondAttribute="trailing" id="M2j-Oi-Pmd"/>
                             <constraint firstItem="lS0-di-kIi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MyT-Zf-hKJ"/>
-                            <constraint firstItem="YCP-Kc-c3d" firstAttribute="bottom" secondItem="lS0-di-kIi" secondAttribute="top" constant="-96" id="Oe4-Mw-dfY"/>
+                            <constraint firstItem="YCP-Kc-c3d" firstAttribute="bottom" secondItem="lS0-di-kIi" secondAttribute="top" constant="-25" id="Oe4-Mw-dfY"/>
                             <constraint firstItem="kPu-jc-9T0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="SKJ-l0-EoF"/>
                             <constraint firstItem="QXa-0y-roB" firstAttribute="top" secondItem="kPu-jc-9T0" secondAttribute="bottom" constant="15" id="SvE-A8-MLF"/>
                             <constraint firstItem="hGx-gJ-L4e" firstAttribute="bottom" secondItem="es9-B6-b2i" secondAttribute="bottom" constant="-49" id="eQ8-jP-2R9"/>
