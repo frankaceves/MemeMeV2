@@ -21,7 +21,7 @@ class SentMemesCollectionViewController: UICollectionViewController {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
-        self.collectionView?.reloadData()
+        collectionView?.reloadData()
     }
     
     
