@@ -41,4 +41,11 @@ class SentMemesCollectionViewController: UICollectionViewController, UICollectio
         navigationController?.pushViewController(detailController, animated: true)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let yourWidth = collectionView.bounds.width/3.33
+        let height = collectionView.bounds.height/5
+        
+        return CGSize(width: yourWidth, height: height)
+    }
+    
 }
