@@ -14,7 +14,6 @@ class SentMemesTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         memes = appDelegate.memes
         tableView.reloadData()
@@ -31,6 +30,7 @@ class SentMemesTableViewController: UITableViewController {
         let memeToShow = memes[indexPath.row]
         cell.imageView?.image = memeToShow.memedImage
         cell.textLabel?.text = "\(memeToShow.topText)...\(memeToShow.bottomText)"
+        
         return cell
     }
     
