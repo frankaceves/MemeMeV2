@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SentMemesCollectionViewController: UICollectionViewController {
+class SentMemesCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     var memes: [Meme]!
     
     override func viewWillAppear(_ animated: Bool) {
